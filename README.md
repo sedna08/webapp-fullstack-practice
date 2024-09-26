@@ -1,0 +1,1 @@
+# This repository is a practice fullstack development using NextJS for Frontend, NodeJS backed, and PostgreSQL database
