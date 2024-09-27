@@ -62,3 +62,21 @@ app.post('/users', async(req, res) => {
         res.status(500).json({ message: error.message });
     }
 });
+
+// update user
+app.put('/users/:id', async(req, res) => {
+    try {
+        const user = await prisma.user.update({
+            where: {
+                id: Number(req.params.id),
+            },
+            data: {
+                name: req.body.name,
+                email: req.body.email
+            },
+        });
+        res.status(200).json(user);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+});
