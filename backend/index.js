@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 });
 
 // test api 
-app.length('/test', (req, res) => {
+app.get('/test', (req, res) => {
     try{
         res.status(200).json({ message: 'API is working' });
     } catch (error) {
@@ -25,7 +25,7 @@ app.length('/test', (req, res) => {
 });
 
 // get all users
-app.length('/users', async(req, res) => {
+app.get('/users', async(req, res) => {
     try{
         const users = await prisma.user.findMany();
         res.status(200).json(users);
