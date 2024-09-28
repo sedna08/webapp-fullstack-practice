@@ -15,4 +15,7 @@
     - `docker exec -it db psql -U user`
     - `user#\c mydb`
     - `user#\dt` - To check relations
-    - `user#select * from "User";` This will show empty rows in the table.
+    - `user#select * from "User";` - This will show empty rows in the table.
+
+### Access Web-app
+- access http://localhost:3000 in your web browser
