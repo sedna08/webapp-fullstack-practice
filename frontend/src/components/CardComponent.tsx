@@ -15,3 +15,5 @@ const CardComponent: React.FC<{ card: Card }> = ({ card }) => {
         </div>
     );
 }
+
+export default CardComponent;
