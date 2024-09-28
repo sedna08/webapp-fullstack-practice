@@ -1,5 +1,13 @@
 # This repository is a practice fullstack development using NextJS for Frontend, NodeJS backed, and PostgreSQL database
 
+## This is based on https://www.youtube.com/watch?v=NaqNk2TbeRE
+
+This is a User Management App allowing users to do the following:
+
+- create enter a user and email and save it to the database.
+- update user and email.
+- delete a user in the database.
+
 ## Prerequisite - Install Docker on your Machine
 
 ### For Windows:
